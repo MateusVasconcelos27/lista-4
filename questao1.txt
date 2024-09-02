@@ -1,0 +1,33 @@
+using System
+
+class Program;
+{
+    static void Main()
+    {
+        console.write("qual tipo de poção voce deseja usar? (pequena/media/grande): ")
+        int tipodepocao = int.Parse(console.writeline());
+        console.write("qual o nivel do seu personagem?: ")
+        int niveldopersonagem = int.Parse(console.writeline());
+        console.write("qual a quantidade de pocoes que voce deseja usar?: ")
+        int quantidadedepocoes = int.Parse(console.writeline());
+        console.writeline($"total de vida recuperada: {vidarecuperada}")
+        static int Calcular vidarecuperada(string tipodepocao, int niveldopersonagem, int quantidadedepocoes)
+        int vidaporpocao = 0
+        switch (tipodepocao.tolower())
+        case "pequena"
+        vidaporpocao = 10
+        break;
+        case "media"
+        vidaporpocao = 20
+        break;
+        case "grande"
+        vidaporpocao = 30
+        break;
+        default:
+        consolew.writeline("tipo de poção invalido.");
+        int vidarecuperada = vidaporpocao * quantidadedepocoes 
+        if nivel > 5
+        (niveldopersonagem - 5) * 5; vidarecuperada += pontosadicionais * quantidadedepocoes;
+        return vidarecuperada
+    }
+}
