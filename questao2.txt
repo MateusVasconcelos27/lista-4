@@ -1,0 +1,36 @@
+using System
+
+class Program
+{
+    static void Main()
+    {
+        console.write("qual dificuldade voce escolherar para sua missao (facil/medio/dificil)")
+        int dificuldade = int.parse(console.readline())
+        console.write("qual foi o numero de inimigos derrotados? ")
+        int numderrotados = int.parse(console.readline())
+        console.write("qual foi o tempo gasto? ")
+        int tempogasto = int.parse(console.readline())
+        int numderrotados = 0
+        int tempogasto = 0
+        case "facil"
+        numderrotados = 10
+        tempogasto = 0
+        break;
+        case "meido"
+        numderrotados = 15
+        tempogasto = 5
+        break;
+        case "dificl"
+        numderrotados = 20
+        tempogasto = 10
+        break;
+        default:
+        Console.writeline("dificuldade invalida")
+        return 0
+        int pontucacao = pontosporinimigo * inimgos;
+        if (tempogasto > tempolimite)
+        int minutosexedentes = tempogasto - tempolimite;
+        return pontuacao
+         
+    }
+}
