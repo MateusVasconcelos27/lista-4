@@ -1,0 +1,27 @@
+using System
+
+class Program
+{
+    static void Main()
+    {
+        console.write("qual e a quantidade de mana?: ")
+        int mana = convert.ToInt32(console.readline());
+        console.write("digite o tipo inimigo (normal/forte/boss): ")
+        string tipoInimigo = console.readline();
+        console.write("diga a distancia do alvo (em metros): ")
+        double distancia = convert.ToDouble(console.readline());
+        string habilidadesugerida = sugerirhabilidade
+        console.WriteLine($"habilidade sugerida: {habilidadesugerida}")
+        static string sugerirhabilidade(int mana, string tipoInimigo, double distancia)
+        int manaNecessaria += 10;
+        if distancia < 10
+        manaNecessaria -= 5;
+        if mana >= manaNecessaria
+        return "habilidade poderosa"
+        else
+        {
+            return "habilidade basica"
+        }
+
+    }
+}
