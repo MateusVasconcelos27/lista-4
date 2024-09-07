@@ -1,0 +1,34 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.write("digite a energia do jogador: ")
+        int energia = Convert.ToInt32(console.readline());
+        console.write("digite a distancia do aliado (em metros): ")
+        double distancia = convert.ToDouble(console.readline());
+        bool resgateBemsucedido = VerificarResgate(energia, distancia, nivelAmeaca);
+        if (resgateBemsucedido)
+        console.WriteLine("resgate bem sucedido")
+        else
+        console.WriteLine("resgate falhou")
+        static bool VerificarResgate(int energia, double distancia, string nivelAmeaca)
+        if (distancia < 20)
+        energia +=10;
+        switch (nivelAmeaca.ToLower())
+        case "baixo"
+        break;
+        case "medio"
+        energia -= 10;
+        break;
+        case "alto"
+        energia -= 20;
+        break;
+        default:
+        console.WriteLine("nivel de ameaça invalido")
+        break;
+        return energia > 50;
+        
+    }
+}
