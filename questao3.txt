@@ -1,0 +1,33 @@
+using System
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("qual e o valor do ataque base?: ")
+        int valorAtaqueBase = int.Parse(Console.ReadLine());
+        Console.Write("qual e o multiplicador critico (1.5x/2x/3x)?: ")
+        int valorMultCrit = int.Parse(Console.ReadLine());
+        Console.Write("qual foi o tipo de arma usada (espada/arco/cajado)?: ")
+        int armaUsada = int.Parse(Console.ReadLine());
+        double danoTotal = danoCritco(valorAtaqueBase, valorMultCrit, armaUsada)
+        Console.ReadLine("o dano total causado pelo ataque critico e {danoTotal}")
+        static double CalcularDanoCritico(double ataqueBase, double multiplicadorCritico, string tipoArma)
+        double danoCritco = valorAtaqueBase * valorMultCrit;
+        switch (tipoArma.ToLower())
+        case "espada"
+        danoCritico += 10;
+        break;
+        case "arco"
+        danoCritico += 5;
+        break;
+        case "cajado"
+        danoCritico += 15;
+        break;
+        default:
+        Console.WriteLine("tipo de arma invalido. bonus não aplicado.")
+        break;
+        return danoCritco;
+
+    }
+}
